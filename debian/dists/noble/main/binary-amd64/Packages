@@ -504,3 +504,20 @@ Description: A robot helper for agent skills
  A fast, cross-platform package manager for AI agent skills.
  Think npm, but for skills.
 
+Package: rosie
+Architecture: amd64
+Version: 0.8.4~noble1
+Priority: optional
+Section: utils
+Maintainer: Matthew Phillips <matthew@matthewphillips.info>
+Filename: pool/noble/rosie_0.8.4~noble1_amd64.deb
+Size: 1184950
+MD5sum: f0975252ac0812459a03262621b65d4f
+SHA1: 9b2dd86b86f726ff7891ef4f84b86cb432af5b92
+SHA256: b5aade36a14dcdfe86b3ce723b586b1ffdf5d171a5a43277652d2c2c3e921d29
+SHA512: 1985dbc27222e4a0b8be39ddd8d545f6d9e8e4bf346e793f1550f3d1a21ca17f4b62ce1ae42e886f9af468eea2afba0e3fa06f4e4ddc1f359e5152d57eafdc7f
+Homepage: https://github.com/withastro/rosie
+Description: A robot helper for agent skills
+ A fast, cross-platform package manager for AI agent skills.
+ Think npm, but for skills.
+
