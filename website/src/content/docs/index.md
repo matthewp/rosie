@@ -58,7 +58,7 @@ title: rosie
     </li>
     <li>
       <span class="bullet">▸</span>
-      <strong class="key">native c, no runtime</strong>
+      <strong class="key">native rust, no runtime</strong>
       <span class="val">single small binary. no node, no python, no jvm.</span>
     </li>
   </ul>
@@ -133,21 +133,11 @@ EOF
   </div>
 
   <div class="tab-panel" data-panel="src">
-    <p class="panel-note"><span class="comment"># install deps for your platform first</span></p>
-<pre class="term-block"><span class="comment"># debian / ubuntu</span>
-<span class="prompt">$</span> sudo apt install libcurl4-openssl-dev libarchive-dev pkg-config
-
-<span class="comment"># macos</span>
-<span class="prompt">$</span> brew install curl libarchive pkg-config
-
-<span class="comment"># arch</span>
-<span class="prompt">$</span> sudo pacman -S curl libarchive pkgconf</pre>
-
-    <p class="panel-note"><span class="comment"># then clone, build, install (defaults to /usr/local/bin)</span></p>
-<pre class="term-block"><span class="prompt">$</span> git clone https://github.com/withastro/rosie
+    <p class="panel-note"><span class="comment"># <a href="https://rustup.rs/">install rust and cargo</a> for your platform first</span></p>
+    <p class="panel-note"><span class="comment"># then clone and install (defaults to ~/.cargo/bin)</span></p>
+    <pre class="term-block"><span class="prompt">$</span> git clone https://github.com/withastro/rosie
 <span class="prompt">$</span> cd rosie
-<span class="prompt">$</span> make
-<span class="prompt">$</span> sudo make install<button class="copy-btn" data-copy>[ copy ]</button></pre>
+<span class="prompt">$</span> cargo install --path . --locked<button class="copy-btn" data-copy>[ copy ]</button></pre>
   </div>
 </section>
 
