@@ -76,6 +76,7 @@ pub const AGENT_DEFS: &[AgentDef] = &[
     AgentDef { name: "mistral-vibe",   display: "Mistral Vibe",    aliases: &[],   project_path: ".vibe/skills",           global_path: ".vibe/skills",                  detect_dir: ".vibe",               binary: None },
     AgentDef { name: "mux",            display: "Mux",             aliases: &[],   project_path: ".mux/skills",            global_path: ".mux/skills",                   detect_dir: ".mux",                binary: None },
     AgentDef { name: "neovate",        display: "Neovate",         aliases: &[],   project_path: ".neovate/skills",        global_path: ".neovate/skills",               detect_dir: ".neovate",            binary: None },
+    AgentDef { name: "omp",            display: "OMP Agent",       aliases: &[],   project_path: ".omp/skills",            global_path: ".omp/agent/skills",              detect_dir: ".omp/agent",           binary: Some("omp") },
     AgentDef { name: "pi",             display: "Pi",              aliases: &[],   project_path: ".pi/skills",             global_path: ".pi/agent/skills",              detect_dir: ".pi",                 binary: None },
     AgentDef { name: "pochi",          display: "Pochi",           aliases: &[],   project_path: ".pochi/skills",          global_path: ".pochi/skills",                 detect_dir: ".pochi",              binary: None },
     AgentDef { name: "qoder",          display: "Qoder",           aliases: &[],   project_path: ".qoder/skills",          global_path: ".qoder/skills",                 detect_dir: ".qoder",              binary: None },
@@ -187,7 +188,7 @@ mod tests {
 
     #[test]
     fn known_count() {
-        assert_eq!(AGENT_DEFS.len(), 57);
+        assert_eq!(AGENT_DEFS.len(), 58);
     }
 
     #[test]

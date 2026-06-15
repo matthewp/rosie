@@ -14,7 +14,7 @@ navOrder: 5
 <section class="supported">
   <p class="lockfile-intro">agents are auto-detected by the presence of their config directory in <code>$HOME</code>. target them explicitly with <code>--agent &lt;name&gt;</code>.</p>
 
-  <h3 class="sub-label">skills · 57 supported</h3>
+  <h3 class="sub-label">skills · 58 supported</h3>
   <ul class="bullet-list">
     <li><span class="bullet">▸</span><strong class="key">adal</strong><span class="val">AdaL · <code>~/.adal/skills/</code></span></li>
     <li><span class="bullet">▸</span><strong class="key">aider</strong><span class="val">AiderDesk · <code>~/.aider-desk/skills/</code></span></li>
@@ -58,6 +58,7 @@ navOrder: 5
     <li><span class="bullet">▸</span><strong class="key">opencode</strong><span class="val">OpenCode · <code>~/.config/opencode/skills/</code></span></li>
     <li><span class="bullet">▸</span><strong class="key">openclaw</strong><span class="val">OpenClaw · <code>~/.openclaw/skills/</code></span></li>
     <li><span class="bullet">▸</span><strong class="key">openhands</strong><span class="val">OpenHands · <code>~/.openhands/skills/</code></span></li>
+    <li><span class="bullet">▸</span><strong class="key">omp</strong><span class="val">OMP Agent · <code>~/.omp/agent/skills/</code></span></li>
     <li><span class="bullet">▸</span><strong class="key">pi</strong><span class="val">Pi · <code>~/.pi/agent/skills/</code></span></li>
     <li><span class="bullet">▸</span><strong class="key">pochi</strong><span class="val">Pochi · <code>~/.pochi/skills/</code></span></li>
     <li><span class="bullet">▸</span><strong class="key">qoder</strong><span class="val">Qoder · <code>~/.qoder/skills/</code></span></li>

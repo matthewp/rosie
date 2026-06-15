@@ -72,6 +72,7 @@ export const AGENT_DEFS: AgentDef[] = [
   { name: "mistral-vibe", display: "Mistral Vibe", aliases: [], projectPath: ".vibe/skills", globalPath: ".vibe/skills", detectDir: ".vibe", binary: null },
   { name: "mux", display: "Mux", aliases: [], projectPath: ".mux/skills", globalPath: ".mux/skills", detectDir: ".mux", binary: null },
   { name: "neovate", display: "Neovate", aliases: [], projectPath: ".neovate/skills", globalPath: ".neovate/skills", detectDir: ".neovate", binary: null },
+  { name: "omp", display: "OMP Agent", aliases: [], projectPath: ".omp/skills", globalPath: ".omp/agent/skills", detectDir: ".omp/agent", binary: "omp" },
   { name: "pi", display: "Pi", aliases: [], projectPath: ".pi/skills", globalPath: ".pi/agent/skills", detectDir: ".pi", binary: null },
   { name: "pochi", display: "Pochi", aliases: [], projectPath: ".pochi/skills", globalPath: ".pochi/skills", detectDir: ".pochi", binary: null },
   { name: "qoder", display: "Qoder", aliases: [], projectPath: ".qoder/skills", globalPath: ".qoder/skills", detectDir: ".qoder", binary: null },

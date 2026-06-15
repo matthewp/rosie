@@ -49,7 +49,7 @@ title: rosie
     <li>
       <span class="bullet">▸</span>
       <strong class="key">multi-agent install</strong>
-      <span class="val">claude, cursor, opencode, codex, and <a href="/docs/agents/">8 more</a> — auto-detected</span>
+      <span class="val">claude, cursor, opencode, codex, and <a href="/docs/agents/">54 more</a> — auto-detected</span>
     </li>
     <li>
       <span class="bullet">▸</span>
