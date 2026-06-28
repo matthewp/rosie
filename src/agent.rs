@@ -84,8 +84,26 @@ pub const AGENT_DEFS: &[AgentDef] = &[
     AgentDef { name: "rovodev",        display: "Rovo Dev",        aliases: &[],   project_path: ".rovodev/skills",        global_path: ".rovodev/skills",               detect_dir: ".rovodev",            binary: None },
     AgentDef { name: "trae",           display: "Trae",            aliases: &[],   project_path: ".trae/skills",           global_path: ".trae/skills",                  detect_dir: ".trae",               binary: None },
     AgentDef { name: "trae-cn",        display: "Trae CN",         aliases: &[],   project_path: ".trae/skills",           global_path: ".trae-cn/skills",               detect_dir: ".trae-cn",            binary: None },
-    AgentDef { name: "zencoder",       display: "Zencoder",        aliases: &[],   project_path: ".zencoder/skills",       global_path: ".zencoder/skills",              detect_dir: ".zencoder",           binary: None },
+    AgentDef { name: "zencoder",       display: "Zencoder",        aliases: &["zenflow"], project_path: ".zencoder/skills",  global_path: ".zencoder/skills",              detect_dir: ".zencoder",           binary: None },
     AgentDef { name: "adal",           display: "AdaL",            aliases: &[],   project_path: ".adal/skills",           global_path: ".adal/skills",                  detect_dir: ".adal",               binary: None },
+
+    // --- Tier 4 additions ---
+    AgentDef { name: "antigravity-cli", display: "Antigravity CLI", aliases: &[],  project_path: ".agents/skills",        global_path: ".gemini/antigravity-cli/skills", detect_dir: ".gemini/antigravity-cli", binary: None },
+    AgentDef { name: "astrbot",        display: "AstrBot",         aliases: &[],   project_path: "data/skills",            global_path: ".astrbot/data/skills",          detect_dir: ".astrbot",            binary: None },
+    AgentDef { name: "autohand-code",  display: "Autohand Code CLI", aliases: &[], project_path: ".autohand/skills",       global_path: ".autohand/skills",              detect_dir: ".autohand",           binary: None },
+    AgentDef { name: "eve",            display: "Eve",             aliases: &[],   project_path: "agent/skills",           global_path: "agent/skills",                  detect_dir: "",                    binary: None },
+    AgentDef { name: "inference-sh",   display: "inference.sh",    aliases: &[],   project_path: ".inferencesh/skills",    global_path: ".inferencesh/skills",           detect_dir: ".inferencesh",        binary: None },
+    AgentDef { name: "jazz",           display: "Jazz",            aliases: &[],   project_path: ".jazz/skills",           global_path: ".jazz/skills",                  detect_dir: ".jazz",               binary: None },
+    AgentDef { name: "lingma",         display: "Lingma",          aliases: &[],   project_path: ".lingma/skills",         global_path: ".lingma/skills",                detect_dir: ".lingma",             binary: None },
+    AgentDef { name: "loaf",           display: "Loaf",            aliases: &[],   project_path: ".agents/skills",         global_path: ".agents/skills",                detect_dir: ".loaf",               binary: None },
+    AgentDef { name: "moxby",          display: "Moxby",           aliases: &[],   project_path: ".moxby/skills",          global_path: ".moxby/skills",                 detect_dir: ".moxby",              binary: None },
+    AgentDef { name: "ona",            display: "Ona",             aliases: &[],   project_path: ".ona/skills",            global_path: ".ona/skills",                   detect_dir: ".ona",                binary: None },
+    AgentDef { name: "promptscript",   display: "PromptScript",    aliases: &[],   project_path: ".agents/skills",         global_path: ".agents/skills",                detect_dir: "",                    binary: None },
+    AgentDef { name: "qoder-cn",       display: "Qoder CN",        aliases: &[],   project_path: ".qoder/skills",          global_path: ".qoder-cn/skills",              detect_dir: ".qoder-cn",           binary: None },
+    AgentDef { name: "reasonix",       display: "Reasonix",        aliases: &[],   project_path: ".reasonix/skills",       global_path: ".reasonix/skills",              detect_dir: ".reasonix",           binary: None },
+    AgentDef { name: "terramind",      display: "Terramind",       aliases: &[],   project_path: ".terramind/skills",      global_path: ".terramind/skills",             detect_dir: ".terramind",          binary: None },
+    AgentDef { name: "tinycloud",      display: "Tinycloud",       aliases: &[],   project_path: ".tinycloud/skills",      global_path: ".tinycloud/skills",             detect_dir: ".tinycloud",          binary: None },
+
     AgentDef { name: "universal",      display: "Universal",       aliases: &[],   project_path: ".agents/skills",         global_path: ".config/agents/skills",         detect_dir: "",                    binary: None },
 ];
 
@@ -188,7 +206,7 @@ mod tests {
 
     #[test]
     fn known_count() {
-        assert_eq!(AGENT_DEFS.len(), 58);
+        assert_eq!(AGENT_DEFS.len(), 73);
     }
 
     #[test]
