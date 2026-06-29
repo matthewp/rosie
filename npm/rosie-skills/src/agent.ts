@@ -80,8 +80,26 @@ export const AGENT_DEFS: AgentDef[] = [
   { name: "rovodev", display: "Rovo Dev", aliases: [], projectPath: ".rovodev/skills", globalPath: ".rovodev/skills", detectDir: ".rovodev", binary: null },
   { name: "trae", display: "Trae", aliases: [], projectPath: ".trae/skills", globalPath: ".trae/skills", detectDir: ".trae", binary: null },
   { name: "trae-cn", display: "Trae CN", aliases: [], projectPath: ".trae/skills", globalPath: ".trae-cn/skills", detectDir: ".trae-cn", binary: null },
-  { name: "zencoder", display: "Zencoder", aliases: [], projectPath: ".zencoder/skills", globalPath: ".zencoder/skills", detectDir: ".zencoder", binary: null },
+  { name: "zencoder", display: "Zencoder", aliases: ["zenflow"], projectPath: ".zencoder/skills", globalPath: ".zencoder/skills", detectDir: ".zencoder", binary: null },
   { name: "adal", display: "AdaL", aliases: [], projectPath: ".adal/skills", globalPath: ".adal/skills", detectDir: ".adal", binary: null },
+
+  // --- Tier 4 additions ---
+  { name: "antigravity-cli", display: "Antigravity CLI", aliases: [], projectPath: ".agents/skills", globalPath: ".gemini/antigravity-cli/skills", detectDir: ".gemini/antigravity-cli", binary: null },
+  { name: "astrbot", display: "AstrBot", aliases: [], projectPath: "data/skills", globalPath: ".astrbot/data/skills", detectDir: ".astrbot", binary: null },
+  { name: "autohand-code", display: "Autohand Code CLI", aliases: [], projectPath: ".autohand/skills", globalPath: ".autohand/skills", detectDir: ".autohand", binary: null },
+  { name: "eve", display: "Eve", aliases: [], projectPath: "agent/skills", globalPath: "agent/skills", detectDir: "", binary: null },
+  { name: "inference-sh", display: "inference.sh", aliases: [], projectPath: ".inferencesh/skills", globalPath: ".inferencesh/skills", detectDir: ".inferencesh", binary: null },
+  { name: "jazz", display: "Jazz", aliases: [], projectPath: ".jazz/skills", globalPath: ".jazz/skills", detectDir: ".jazz", binary: null },
+  { name: "lingma", display: "Lingma", aliases: [], projectPath: ".lingma/skills", globalPath: ".lingma/skills", detectDir: ".lingma", binary: null },
+  { name: "loaf", display: "Loaf", aliases: [], projectPath: ".agents/skills", globalPath: ".agents/skills", detectDir: ".loaf", binary: null },
+  { name: "moxby", display: "Moxby", aliases: [], projectPath: ".moxby/skills", globalPath: ".moxby/skills", detectDir: ".moxby", binary: null },
+  { name: "ona", display: "Ona", aliases: [], projectPath: ".ona/skills", globalPath: ".ona/skills", detectDir: ".ona", binary: null },
+  { name: "promptscript", display: "PromptScript", aliases: [], projectPath: ".agents/skills", globalPath: ".agents/skills", detectDir: "", binary: null },
+  { name: "qoder-cn", display: "Qoder CN", aliases: [], projectPath: ".qoder/skills", globalPath: ".qoder-cn/skills", detectDir: ".qoder-cn", binary: null },
+  { name: "reasonix", display: "Reasonix", aliases: [], projectPath: ".reasonix/skills", globalPath: ".reasonix/skills", detectDir: ".reasonix", binary: null },
+  { name: "terramind", display: "Terramind", aliases: [], projectPath: ".terramind/skills", globalPath: ".terramind/skills", detectDir: ".terramind", binary: null },
+  { name: "tinycloud", display: "Tinycloud", aliases: [], projectPath: ".tinycloud/skills", globalPath: ".tinycloud/skills", detectDir: ".tinycloud", binary: null },
+
   { name: "universal", display: "Universal", aliases: [], projectPath: ".agents/skills", globalPath: ".config/agents/skills", detectDir: "", binary: null },
 ];
 

@@ -88,7 +88,7 @@ divergence, so `src/os/` collapses into direct `node:fs` / `node:os` /
 | `src/util.rs` | `util.ts` | path join (`node:path`), home/temp dir, fs helpers, the hand-rolled `package.json` version scanner. |
 | `src/lockfile.rs` | `lockfile.ts` | Custom whitespace format, `# rosie-lock v1` header, atomic write (`.tmp` then rename). ISO-8601 via `Date`. |
 | `src/skill.rs` | `skill.ts` | YAML frontmatter mini-parser (`name`, `description`), `discover_skills` with the same search paths + depth-5 limit. |
-| `src/agent.rs` | `agent.ts` | Port `AGENT_DEFS` (58 entries) verbatim. `detect_agents`, install-path resolution. |
+| `src/agent.rs` | `agent.ts` | Port `AGENT_DEFS` (73 entries) verbatim. `detect_agents`, install-path resolution. |
 | `src/agentsmd.rs` | `agentsmd.ts` | The `<!-- rosie:references:start -->` block rewriter across AGENTS.md / CLAUDE.md / GEMINI.md / copilot-instructions. |
 | `src/sanitize.rs` | `sanitize.ts` | Invisible-char stripping + markdown-comment stripping outside fences. Pure text, direct port. |
 | `src/archive.rs` | `archive.ts` | `gunzipSync` + hand-rolled tar reader. `get_archive_root_dir` reads the first entry. |
