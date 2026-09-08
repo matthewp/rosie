@@ -159,15 +159,15 @@ else
           const [pkgPath, pkgDir] = process.argv.slice(1);
           const p = JSON.parse(fs.readFileSync(pkgPath, "utf8"));
           p.pnpm = p.pnpm || {};
-          // Inject our local rosie-skills build AND re-assert workers-sdk's
+          // Inject our local rosie-skills build AND re-assert the workers-sdk
           // undici-types pin. The rosie-skills file: override forces a lockfile
           // re-resolution (--no-frozen-lockfile below), during which pnpm stops
-          // honoring workers-sdk's pnpm-workspace.yaml override that pins
-          // @types/node's undici-types to 7.29.0 (matching their catalog-pinned
-          // undici). Without the re-pin, @types/node pulls undici-types@6.x into
-          // the tree and miniflare's types:build fails on the FormData type
-          // mismatch, blocking the wrangler bundle. Keep this in sync with
-          // workers-sdk's catalog:undici-types when they bump undici.
+          // honoring the pnpm-workspace.yaml override that pins the undici-types
+          // of @types/node to 7.29.0 (matching the catalog-pinned undici).
+          // Without the re-pin, @types/node pulls undici-types@6.x into the tree
+          // and the miniflare types:build fails on the FormData type mismatch,
+          // blocking the wrangler bundle. Keep in sync with the workers-sdk
+          // catalog entry for undici-types when undici is bumped.
           p.pnpm.overrides = Object.assign({}, p.pnpm.overrides, {
             "rosie-skills": "file:" + pkgDir,
             "undici-types": "7.29.0"
