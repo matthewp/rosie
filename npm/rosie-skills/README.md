@@ -134,7 +134,7 @@ await rosie.update('pdf');      // update just one
 ### Security defenses
 
 Every install applies content sanitization and structured auditing by
-default; see [docs/security](https://rosie.astro.build/docs/security/) for the full
+default; see [docs/security](https://rosieskills.dev/docs/security/) for the full
 threat model. Each defense can be disabled per call via `InstallOptions`:
 
 ```js
@@ -193,9 +193,9 @@ A standalone, self-contained `rosie` binary (built from the Rust
 implementation) is distributed separately through OS package managers, for
 users who want the CLI without a Node runtime:
 
-- Homebrew (macOS / Linux): `brew tap withastro/rosie && brew install rosie`
+- Homebrew (macOS / Linux): `brew tap rosieskills/rosie && brew install rosie`
 - Arch Linux: `yay -S rosie`
-- Debian/Ubuntu: see <https://github.com/withastro/rosie>
+- Debian/Ubuntu: see <https://github.com/rosieskills/rosie>
 - Source: clone the repo and run `cargo build --release`
 
 ## License

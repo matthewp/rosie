@@ -1,6 +1,6 @@
-# rosie.astro.build
+# rosieskills.dev
 
-The marketing site for [Rosie](https://github.com/withastro/rosie). Static assets served by a Cloudflare Worker.
+The marketing site for [Rosie](https://github.com/rosieskills/rosie). Static assets served by a Cloudflare Worker.
 
 ## Layout
 
@@ -41,14 +41,14 @@ npx wrangler dev     # http://localhost:8787
 
 ## Deploy
 
-Requires the [Cloudflare Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) and a Cloudflare account where `astro.build` is configured as a zone.
+Requires the [Cloudflare Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) and a Cloudflare account where `rosieskills.dev` is configured as a zone.
 
 ```bash
 npx wrangler login   # one-time
 npm run deploy       # builds, then runs wrangler deploy
 ```
 
-The `routes` block in `wrangler.jsonc` binds the worker to `rosie.astro.build` as a custom domain. Cloudflare will provision the certificate automatically the first time.
+The `routes` block in `wrangler.jsonc` binds the worker to `rosieskills.dev` as a custom domain. Cloudflare will provision the certificate automatically the first time.
 
 ## Recording the demo (`demo.svg`)
 

@@ -22,9 +22,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/withastro/rosie.git"
+    "url": "git+https://github.com/rosieskills/rosie.git"
   },
-  "homepage": "https://github.com/withastro/rosie",
+  "homepage": "https://github.com/rosieskills/rosie",
   "license": "BSD-3-Clause",
   "author": "Matthew Phillips",
   "engines": {
