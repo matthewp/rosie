@@ -10,7 +10,7 @@ Rosie ships two artifacts from one tag:
 - the **standalone Rust `rosie` binary** (Homebrew, AUR, Debian/Ubuntu, FreeBSD), and
 - the **`rosie-skills` npm package** (pure TypeScript).
 
-Releases are **tag-driven**. Pushing a `v*` tag to `withastro/rosie` runs
+Releases are **tag-driven**. Pushing a `v*` tag to `rosieskills/rosie` runs
 `.github/workflows/release.yaml`, which builds and publishes everything. You do
 not publish anything by hand.
 
@@ -70,7 +70,7 @@ For a release `X.Y.Z` (example: `0.8.0`):
   tarball SHA256 used by Homebrew/AUR.
 - **npm-publish** - sets the version from the tag, builds `dist/` via `tsc`,
   runs `npm publish` for `rosie-skills` (npm OIDC, no token).
-- **homebrew-and-aur** - updates the `withastro/homebrew-rosie` formula and the
+- **homebrew-and-aur** - updates the `rosieskills/homebrew-rosie` formula and the
   AUR `PKGBUILD`.
 - **debian-build** + **debian-publish** - builds `.deb`s for jammy and noble,
   publishes the apt repo to `gh-pages`.
@@ -82,8 +82,8 @@ For a release `X.Y.Z` (example: `0.8.0`):
 
 ```sh
 # Release workflow + per-job status
-gh run list --repo withastro/rosie --workflow release.yaml --limit 1
-gh run view <run-id> --repo withastro/rosie
+gh run list --repo rosieskills/rosie --workflow release.yaml --limit 1
+gh run view <run-id> --repo rosieskills/rosie
 
 # npm published and tagged latest
 npm view rosie-skills version dist-tags

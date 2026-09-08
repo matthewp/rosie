@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://rosie.astro.build',
+  site: 'https://rosieskills.dev',
   integrations: [sitemap()],
   server: {
     // 2062 — the year The Jetsons is set in. rosie was Rosey in the show.

@@ -29,7 +29,7 @@ title: rosie
 
   <div class="cta-row">
     <a class="btn btn-primary" href="#install">[ install rosie ]</a>
-    <a class="btn btn-ghost" href="https://github.com/withastro/rosie">[ github → ]</a>
+    <a class="btn btn-ghost" href="https://github.com/rosieskills/rosie">[ github → ]</a>
   </div>
 </section>
 
@@ -101,7 +101,7 @@ title: rosie
   </div>
 
   <div class="tab-panel active" data-panel="brew">
-<pre class="term-block"><span class="prompt">$</span> brew tap withastro/rosie
+<pre class="term-block"><span class="prompt">$</span> brew tap rosieskills/rosie
 <span class="prompt">$</span> brew install rosie<button class="copy-btn" data-copy>[ copy ]</button></pre>
   </div>
 
@@ -113,7 +113,7 @@ title: rosie
 
   <div class="tab-panel" data-panel="apt">
     <p class="panel-note"><span class="comment"># noble for ubuntu 24.04 / debian 13+, jammy for ubuntu 22.04</span></p>
-<pre class="term-block"><span class="prompt">$</span> echo "deb [trusted=yes] https://pkg.rosie.astro.build/debian noble main" \
+<pre class="term-block"><span class="prompt">$</span> echo "deb [trusted=yes] https://pkg.rosieskills.dev/debian noble main" \
     | sudo tee /etc/apt/sources.list.d/rosie.list
 <span class="prompt">$</span> sudo apt update
 <span class="prompt">$</span> sudo apt install rosie<button class="copy-btn" data-copy>[ copy ]</button></pre>
@@ -124,7 +124,7 @@ title: rosie
 <pre class="term-block"><span class="prompt">$</span> sudo mkdir -p /usr/local/etc/pkg/repos
 <span class="prompt">$</span> cat &lt;&lt;'EOF' | sudo tee /usr/local/etc/pkg/repos/rosie.conf
 rosie: {
-  url: "https://pkg.rosie.astro.build/freebsd/",
+  url: "https://pkg.rosieskills.dev/freebsd/",
   enabled: yes,
   signature_type: "none"
 }
@@ -135,7 +135,7 @@ EOF
   <div class="tab-panel" data-panel="src">
     <p class="panel-note"><span class="comment"># <a href="https://rustup.rs/">install rust and cargo</a> for your platform first</span></p>
     <p class="panel-note"><span class="comment"># then clone and install (defaults to ~/.cargo/bin)</span></p>
-    <pre class="term-block"><span class="prompt">$</span> git clone https://github.com/withastro/rosie
+    <pre class="term-block"><span class="prompt">$</span> git clone https://github.com/rosieskills/rosie
 <span class="prompt">$</span> cd rosie
 <span class="prompt">$</span> cargo install --path . --locked<button class="copy-btn" data-copy>[ copy ]</button></pre>
   </div>
