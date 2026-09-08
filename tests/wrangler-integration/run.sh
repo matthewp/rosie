@@ -207,14 +207,19 @@ else
 
             WDIST="$ws/packages/wrangler/wrangler-dist"
             WBIN="$WDIST/cli.js"
-            META="$WDIST/metafile-cjs.json"
+            RSLINK="$ws/packages/wrangler/node_modules/rosie-skills"
             if [ ! -f "$WBIN" ]; then
                 echo "--- build log (tail) ---" >&2
                 tail -30 "$e2e/build.log" >&2
                 fail "e2e: wrangler bundle not produced ($WBIN)"
-            elif ! grep -q "rosie-skills@file" "$META" 2>/dev/null; then
+            elif ! readlink "$RSLINK" 2>/dev/null | grep -q "rosie-skills@file"; then
                 # The bundled rosie must trace back to our file: override, not a
-                # registry copy. esbuild records its inputs in the metafile.
+                # registry copy. The wrangler tsup build no longer writes a
+                # metafile (workers-sdk moved bundling to tsup+tsdown), so
+                # assert provenance at install time instead: pnpm links the
+                # overridden package from the virtual store entry named after
+                # the file: spec (rosie-skills@file+...), never from a registry
+                # version.
                 fail "e2e: bundled rosie-skills is not the local build (override did not take)"
             else
                 note "Running: wrangler setup --install-skills --dry-run --yes"
